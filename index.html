@@ -1,57 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>M-Pesa Grant Withdrawal</title>
-  <style>
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    .container {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    .amount {
-      font-size: 32px;
-      color: green;
-      margin-bottom: 20px;
-    }
-    .btn {
-      background-color: #00a859;
-      color: white;
-      border: none;
-      padding: 15px 25px;
-      border-radius: 5px;
-      font-size: 18px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn:hover {
-      background-color: #007e45;
-    }
-    img.logo {
-      width: 120px;
-      margin-bottom: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Exclusive Destination</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <img src="data:image/png;base64,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" alt="M-Pesa Logo" class="logo"/>
-    <h2>Grant Available</h2>
-    <p class="amount">20,000 MZN</p>
-    <p>Your M-Pesa grant is ready for withdrawal.</p>
-    <a class="btn" href="https://notebookdryersolution.com/nyhuggxxq4?key=2b1b596f964b0e5b3491be2e5aa31615">Withdraw Now</a>
-  </div>
+<body class="flex items-center justify-center min-h-screen p-4 bg-gradient-to-br from-indigo-900 to-purple-900">
+
+    <!-- Card Container -->
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-xl w-full p-8 md:p-12 text-center">
+
+        <!-- Photo of a beautiful lady -->
+        <div class="mb-8">
+            <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinrUJf1X1MK41Pj7VOHo3vb9cJI6VNuGyT4wWwr8_pZWj5MRmUj0qHUJ3r8EOnc2AlcFhuAXM1EOMLo_3CE97gSOPM4UdM59jdqHdMwj4u5FFLnKaQI_K76BZ1Psbe0sJJPwZ2STjlpH_qYHyk90v1VAhjpSv8XBa70GRhhkF0OuBPUy9GN2SgmSWFHCe-/s320/SnapInsta.to_528859066_18074711366491907_1604083874308909051_n.jpg" 
+                onerror="this.src='https://placehold.co/600x400/94a3b8/e2e8f0?text=Image+Not+Found'"
+                alt="A beautiful woman smiling"
+                class="w-full h-auto rounded-xl object-cover"
+            />
+        </div>
+
+        <!-- Bold and Eye-Catching Placeholder Text -->
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Ndichabhadhara murume upi zvake achandiroora, ndine makore makumi matatu nemashanu ekuberekwa.
+        </h1>
+        <p class="text-md text-gray-600 mb-8">
+            
+        </p>
+
+        <!-- Call to Action Button -->
+        <a href="https://notebookdryersolution.com/y1y9wdk8mg?key=5a0b6ae3845ccfefab5bf0b9e0b78de2" class="inline-block bg-indigo-600 hover:bg-indigo-700 transition duration-300 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+           Dzvanya pano kuti utaure neni.
+        </a>
+
+    </div>
+
 </body>
 </html>
